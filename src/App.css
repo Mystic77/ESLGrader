@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Revoxa Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Revoxa Regular'), url('Revoxa.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Revoxa Regular';
+  text-align: center;
+  font-weight: 200;
+  color: #0ccac4;
+}

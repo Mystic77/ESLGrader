@@ -1,33 +1,57 @@
 import React from 'react';
 
-const FeedbackGenerator = () => {
+const FeedbackGenerator = (props) => {
   return (
     <div>
-      <p>
-        {'Pronunciation 4/5'}
-        <br />
-        {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-      </p>
-      <p>
-        {'Fluency 4/5'}
-        <br />
-        {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-      </p>
-      <p>
-        {'Grammar 3/5'}
-        <br />
-        {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-      </p>
-      <p>
-        {'Vocabulary 3/5'}
-        <br />
-        {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-      </p>
-      <p>
-        {'Content 2/5'}
-        <br />
-        {'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-      </p>
+      <h1 class="f2 br2 near-white mv4 w-100 w-50-m w-25-1 mw6 center">Score: 88</h1>
+      <article class="center mw5 mw6-ns br3 hidden ba b--black-10 mv4">
+        <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">{props.id}: 4/5</h1>
+        <div class="pa3 bt b--black-10">
+          <p class="f6 f5-ns lh-copy measure">
+            {props.feedback}
+          </p>
+        </div>
+     </article>
+      <article class="center mw5 mw6-ns br3 hidden ba b--black-10 mv4">
+        <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">Fluency: 4/5</h1>
+        <div class="pa3 bt b--black-10">
+          <p class="f6 f5-ns lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+        </div>
+     </article>
+      <article class="center mw5 mw6-ns br3 hidden ba b--black-10 mv4">
+        <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">Grammar: 3/5</h1>
+        <div class="pa3 bt b--black-10">
+          <p class="f6 f5-ns lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+        </div>
+     </article>
+      <article class="center mw5 mw6-ns br3 hidden ba b--black-10 mv4">
+        <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">Vocabulary: 3/5</h1>
+        <div class="pa3 bt b--black-10">
+          <p class="f6 f5-ns lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+        </div>
+     </article>
+      <article class="center mw5 mw6-ns br3 hidden ba b--black-10 mv4">
+        <h1 class="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">Content: 2/5</h1>
+        <div class="pa3 bt b--black-10">
+          <p class="f6 f5-ns lh-copy measure">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+        </div>
+     </article>
     </div>
   )
 }
