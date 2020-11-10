@@ -1,71 +1,74 @@
 import React from 'react';
 
-const InputForm = () => {
+const InputForm = ({ scoreChange }) => {
   return (
-    <article class="br2 near-white mv4 w-100 w-50-m w-25-1 mw6 center">
-      <form class="pa4">
-          <legend class="fw1 mb2 f1">Rubric</legend>
-          <fieldset id="pronunciation" class="bn">
-          <h3>Pronunciation</h3>
-          <div class="flex items-center mb2">
-            <input class="mr2" type="radio" id="prongood" value="Good" name="pronunciation" />
-            <label for="prongood" class="lh-copy">Good</label>
-            <input class="mr2 ml5" type="radio" id="pronok" value="OK" name="pronunciation" />
-            <label for="pronok" class="lh-copy">OK</label>
-            <input class="mr2 ml5" type="radio" id="pronbad" value="Bad" name="pronunciation" />
-            <label for="pronbad" class="lh-copy">Bad</label>
-          </div>
-        </fieldset>
-        <fieldset id="fluency" class="bn">
-          <h3>Fluency</h3>
-          <div class="flex items-center mb2">
-            <br />
-            <input class="mr2" type="radio" id="fluegood" value="Good" name="fluency" />
-            <label for="fluegood" class="lh-copy">Good</label>
-            <input class="mr2 ml5" type="radio" id="flueok" value="OK" name="fluency" />
-            <label for="flueok" class="lh-copy">OK</label>
-            <input class="mr2 ml5" type="radio" id="fluebad" value="Bad" name="fluency" />
-            <label for="fluebad" class="lh-copy">Bad</label>
-          </div>
+    <div 
+      onChange={scoreChange}>
+      <article className="br2 near-white mv4 w-100 w-50-m w-25-1 mw6 center">
+        <form className="pa4">
+            <legend className="fw1 mb2 f1">Rubric</legend>
+            <fieldset id="pronunciation" className="bn">
+            <h3>Pronunciation</h3>
+            <div className="flex items-center mb2">
+              <input className="mr2" type="radio" id="pron5" value="5" name="pronunciation" />
+              <label for="pron5" className="lh-copy">5</label>
+              <input className="mr2 ml5" type="radio" id="pron3" value="3" name="pronunciation" />
+              <label for="pron3" className="lh-copy">3</label>
+              <input className="mr2 ml5" type="radio" id="pron1" value="1" name="pronunciation" />
+              <label for="pron1" className="lh-copy">1</label>
+            </div>
           </fieldset>
-          <fieldset id="grammar" class="bn">
-          <h3>Grammar</h3>
-          <div class="flex items-center mb2">
-            <br />
-            <input class="mr2" type="radio" id="gramgood" value="Good" name="grammar" />
-            <label for="gramgood" class="lh-copy">Good</label>
-            <input class="mr2 ml5" type="radio" id="gramok" value="OK" name="grammar" />
-            <label for="gramok" class="lh-copy">OK</label>
-            <input class="mr2 ml5" type="radio" id="grambad" value="Bad" name="grammar" />
-            <label for="grambad" class="lh-copy">Bad</label>
-          </div>
+          <fieldset id="fluency" className="bn">
+            <h3>Fluency</h3>
+            <div className="flex items-center mb2">
+              <br />
+              <input className="mr2" type="radio" id="flue5" value="5" name="fluency" />
+              <label for="flue5" className="lh-copy">5</label>
+              <input className="mr2 ml5" type="radio" id="flue3" value="3" name="fluency" />
+              <label for="flue3" className="lh-copy">3</label>
+              <input className="mr2 ml5" type="radio" id="flue1" value="1" name="fluency" />
+              <label for="flue1" className="lh-copy">1</label>
+            </div>
+            </fieldset>
+            <fieldset id="grammar" className="bn">
+            <h3>Grammar</h3>
+            <div className="flex items-center mb2">
+              <br />
+              <input className="mr2" type="radio" id="gram5" value="5" name="grammar" />
+              <label for="gram5" className="lh-copy">5</label>
+              <input className="mr2 ml5" type="radio" id="gram3" value="3" name="grammar" />
+              <label for="gram3" className="lh-copy">3</label>
+              <input className="mr2 ml5" type="radio" id="gram1" value="1" name="grammar" />
+              <label for="gram1" className="lh-copy">1</label>
+            </div>
+            </fieldset>
+            <fieldset id="vocabulary" className="bn">
+            <h3>Vocabulary</h3>
+            <div className="flex items-center mb2">
+              <br />
+              <input className="mr2" type="radio" id="voc5" value="5" name="vocabulary" />
+              <label for="voc5" className="lh-copy">5</label>
+              <input className="mr2 ml5" type="radio" id="voc3" value="3" name="vocabulary" />
+              <label for="voc3" className="lh-copy">3</label>
+              <input className="mr2 ml5" type="radio" id="voc1" value="1" name="vocabulary" />
+              <label for="voc1" className="lh-copy">1</label>
+            </div>
+            </fieldset>
+            <fieldset id="content" className="bn">
+            <h3>Content</h3>
+            <div className="flex items-center mb2">
+              <br />
+              <input className="mr2" type="radio" id="con5" value="5" name="content" />
+              <label for="con5" className="lh-copy">5</label>
+              <input className="mr2 ml5" type="radio" id="con3" value="3" name="content" />
+              <label for="con3" className="lh-copy">3</label>
+              <input className="mr2 ml5" type="radio" id="con1" value="1" name="content" />
+              <label for="con1" className="lh-copy">1</label>
+            </div>
           </fieldset>
-          <fieldset id="vocabulary" class="bn">
-          <h3>Vocabulary</h3>
-          <div class="flex items-center mb2">
-            <br />
-            <input class="mr2" type="radio" id="vocgood" value="Good" name="vocabulary" />
-            <label for="vocgood" class="lh-copy">Good</label>
-            <input class="mr2 ml5" type="radio" id="vocok" value="OK" name="vocabulary" />
-            <label for="vocok" class="lh-copy">OK</label>
-            <input class="mr2 ml5" type="radio" id="vocbad" value="Bad" name="vocabulary" />
-            <label for="vocbad" class="lh-copy">Bad</label>
-          </div>
-          </fieldset>
-          <fieldset id="content" class="bn">
-          <h3>Content</h3>
-          <div class="flex items-center mb2">
-            <br />
-            <input class="mr2" type="radio" id="congood" value="Good" name="content" />
-            <label for="congood" class="lh-copy">Good</label>
-            <input class="mr2 ml5" type="radio" id="conok" value="OK" name="content" />
-            <label for="conok" class="lh-copy">OK</label>
-            <input class="mr2 ml5" type="radio" id="conbad" value="Bad" name="content" />
-            <label for="conbad" class="lh-copy">Bad</label>
-          </div>
-        </fieldset>
-      </form>
-    </article>
+        </form>
+      </article>
+    </div>
   )
 }
 
