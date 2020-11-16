@@ -13,24 +13,17 @@ class App extends Component {
       grammar: 0,
       vocabulary: 0,
       content: 0,
+      }
     }
-  }
-
-
-
-  // onScoreChange = (event) => {
-  //   const inputCategory = event.target.parentElement.parentElement.getAttribute("id");
-  //   const inputScore = parseInt(event.target.value);
-  //   this.setState({ category: inputCategory })
-  //   this.setState({ score: inputScore })
-  // }
 
   onScoreChange = (event) => {
-    const value = event.target.value
+    const score = event.target.value
+    const category = event.target.parentElement.parentElement.getAttribute("id")
     this.setState({
       ...this.state,
-      [event.target.getAttribute("name")]: value
-    })
+      [category]: score
+      }
+    )
     console.log(this.state)
   }
 

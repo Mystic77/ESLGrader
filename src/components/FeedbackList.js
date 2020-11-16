@@ -7,6 +7,7 @@ import feedback from '../feedback';
 const FeedbackList = ({ input }) => {
   return (
     <div>
+      <h2 className="br2 near-white mv4 w-100 w-50-m w-25-1 mw6 center">Feedback:</h2>
         {Object.entries(input).map((entries) => {
           return (
           <FeedbackGenerator  
