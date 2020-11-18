@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InputForm from './components/InputForm';
+import ScoreCalculator from './components/ScoreCalculator';
 import FeedbackList from './components/FeedbackList';
 import './App.css';
 
@@ -33,6 +34,9 @@ class App extends Component {
       <div className="App">
           <h1 className='f1'>ESL Grader</h1>
           <InputForm scoreChange={this.onScoreChange} />
+          <ScoreCalculator 
+            input={this.state}
+          />
           <FeedbackList 
             input={this.state} 
           />
